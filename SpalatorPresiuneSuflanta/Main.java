@@ -205,6 +205,42 @@ class Suflanta extends Aparat {
                 ", Tip alimentare: " + tipAlimentare;
     }
 }
+//drujba
+public class Drujba extends Aparat {
+    private double lungimeLama; // cm
+    private double capacitateRezervor; // litri
+
+    public Drujba(String model, String marca, String tip, double pret, double lungimeLama, double capacitateRezervor) {
+        super(model, marca, tip, pret);
+        this.lungimeLama = lungimeLama;
+        this.capacitateRezervor = capacitateRezervor;
+    }
+//trimmer
+public class Trimmer extends Aparat {
+    private double putere; // W
+    private double greutate; // kg
+
+    public Trimmer(String model, String marca, String tip, double pret, double putere, double greutate) {
+        super(model, marca, tip, pret);
+        this.putere = putere;
+        this.greutate = greutate;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", putere=" + putere +
+                ", greutate=" + greutate;
+    }
+}
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", lungimeLama=" + lungimeLama +
+                ", capacitateRezervor=" + capacitateRezervor;
+    }
+}
 
 
 class Main {
