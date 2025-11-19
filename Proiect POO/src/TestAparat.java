@@ -6,5 +6,6 @@ public class TestAparat {
 
         System.out.println("Aparat 1: " + aparat1.toString());
         System.out.println("Aparat 2: " + aparat2.toString());
+        System.out.println("Aparat 3: " + aparat3.toString());
     }
 }
