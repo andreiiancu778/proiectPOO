@@ -16,10 +16,10 @@ public class Main {
         for (int i = 0; i < trimmere.length; i++) trimmere[i] = new Trimmer();
 
         // afisare
-        System.out.println("=== DRUJBE ===");
+        System.out.println("DRUJBE");
         for (Object o : drujbe) System.out.println(o);
 
-        System.out.println("\n=== TRIMMER-E ===");
+        System.out.println("\nTRIMMERE");
         for (Object o : trimmere) System.out.println(o);
         Object[] lista = new Object[20];
 
