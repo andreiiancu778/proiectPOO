@@ -8,7 +8,6 @@ public class Trimmer extends Aparat {
     private int capacitateBaterie;    // Wh
     private double timpIncarcare;     // ore
     private int autonomie;            // minute
-    private String tipFir;            // tipul firului: 1.6mm, 2mm etc.
 
     // Constructor fara argumente
     public Trimmer() {
@@ -18,13 +17,12 @@ public class Trimmer extends Aparat {
         this.capacitateBaterie = 0;
         this.timpIncarcare = 0.0;
         this.autonomie = 0;
-        this.tipFir = "necunoscut";
     }
 
     // Constructor complet
     public Trimmer(String marca, String model, int putere, double greutate, double pret,
                    double latimeTaiere, int vitezaRulare, int capacitateBaterie,
-                   double timpIncarcare, int autonomie, String tipFir) {
+                   double timpIncarcare, int autonomie) {
 
         super(marca, model, putere, greutate, pret);
 
@@ -33,7 +31,6 @@ public class Trimmer extends Aparat {
         this.capacitateBaterie = capacitateBaterie;
         this.timpIncarcare = timpIncarcare;
         this.autonomie = autonomie;
-        this.tipFir = tipFir;
     }
 
     // Constructor de copiere
@@ -45,7 +42,6 @@ public class Trimmer extends Aparat {
         this.capacitateBaterie = other.capacitateBaterie;
         this.timpIncarcare = other.timpIncarcare;
         this.autonomie = other.autonomie;
-        this.tipFir = other.tipFir;
     }
 
     // Gettere si settere
@@ -64,9 +60,6 @@ public class Trimmer extends Aparat {
     public int getAutonomie() { return autonomie; }
     public void setAutonomie(int autonomie) { this.autonomie = autonomie; }
 
-    public String getTipFir() { return tipFir; }
-    public void setTipFir(String tipFir) { this.tipFir = tipFir; }
-
     @Override
     public String toString() {
         return "Trimmer{" +
@@ -80,7 +73,6 @@ public class Trimmer extends Aparat {
                 ", capacitateBaterie=" + capacitateBaterie +
                 ", timpIncarcare=" + timpIncarcare +
                 ", autonomie=" + autonomie +
-                ", tipFir='" + tipFir + '\'' +
                 '}';
     }
 }

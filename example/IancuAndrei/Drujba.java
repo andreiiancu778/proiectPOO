@@ -3,69 +3,60 @@ import org.example.Aparat;
 
 public class Drujba extends Aparat {
 
-    private int lungimeLama;        // lungimea lamei in cm
-    private int vitezaChain;        // viteza lantului
-    private int nivelZgomot;        // nivel de zgomot in dB
-    private String tipUlei;         // tipul de ulei folosit
-    private double consumUlei;      // consum ulei ml/min
-    private double rezervorCombustibil; // litri combustibil
+    private double capacitateBaterie;  // Capacitatea bateriei in Wh
+    private double latimeLama;         // Latimea lamei in cm
+    private double notaRecenzii;       // Nota medie a recenziilor
+    private String material;           // Materialul din care este facuta lama (ex: otel, titan)
+    private int vitezaLant;            // Viteza lantului in m/s
 
     // Constructor fara argumente
     public Drujba() {
-        super();
-        this.lungimeLama = 0;
-        this.vitezaChain = 0;
-        this.nivelZgomot = 0;
-        this.tipUlei = "necunoscut";
-        this.consumUlei = 0.0;
-        this.rezervorCombustibil = 0.0;
+        super();  // Apelează constructorul clasei părinte (Aparat)
+        this.capacitateBaterie = 0.0;
+        this.latimeLama = 0.0;
+        this.notaRecenzii = 0.0;
+        this.material = "Necunoscut";
+        this.vitezaLant = 0;
     }
 
     // Constructor cu toate argumentele
     public Drujba(String marca, String model, int putere, double greutate, double pret,
-                  int lungimeLama, int vitezaChain, int nivelZgomot,
-                  String tipUlei, double consumUlei, double rezervorCombustibil) {
+                  double capacitateBaterie, double latimeLama, double notaRecenzii,
+                  String material, int vitezaLant) {
 
-        super(marca, model, putere, greutate, pret);
-
-        this.lungimeLama = lungimeLama;
-        this.vitezaChain = vitezaChain;
-        this.nivelZgomot = nivelZgomot;
-        this.tipUlei = tipUlei;
-        this.consumUlei = consumUlei;
-        this.rezervorCombustibil = rezervorCombustibil;
+        super(marca, model, putere, greutate, pret);  // Apelează constructorul clasei părinte (Aparat)
+        this.capacitateBaterie = capacitateBaterie;
+        this.latimeLama = latimeLama;
+        this.notaRecenzii = notaRecenzii;
+        this.material = material;
+        this.vitezaLant = vitezaLant;
     }
 
     // Constructor de copiere
     public Drujba(Drujba other) {
-        super(other);
-
-        this.lungimeLama = other.lungimeLama;
-        this.vitezaChain = other.vitezaChain;
-        this.nivelZgomot = other.nivelZgomot;
-        this.tipUlei = other.tipUlei;
-        this.consumUlei = other.consumUlei;
-        this.rezervorCombustibil = other.rezervorCombustibil;
+        super(other);  // Apelează constructorul de copiere din Aparat
+        this.capacitateBaterie = other.capacitateBaterie;
+        this.latimeLama = other.latimeLama;
+        this.notaRecenzii = other.notaRecenzii;
+        this.material = other.material;
+        this.vitezaLant = other.vitezaLant;
     }
 
     // Getters & Setters
-    public int getLungimeLama() { return lungimeLama; }
-    public void setLungimeLama(int lungimeLama) { this.lungimeLama = lungimeLama; }
+    public double getCapacitateBaterie() { return capacitateBaterie; }
+    public void setCapacitateBaterie(double capacitateBaterie) { this.capacitateBaterie = capacitateBaterie; }
 
-    public int getVitezaChain() { return vitezaChain; }
-    public void setVitezaChain(int vitezaChain) { this.vitezaChain = vitezaChain; }
+    public double getLatimeLama() { return latimeLama; }
+    public void setLatimeLama(double latimeLama) { this.latimeLama = latimeLama; }
 
-    public int getNivelZgomot() { return nivelZgomot; }
-    public void setNivelZgomot(int nivelZgomot) { this.nivelZgomot = nivelZgomot; }
+    public double getNotaRecenzii() { return notaRecenzii; }
+    public void setNotaRecenzii(double notaRecenzii) { this.notaRecenzii = notaRecenzii; }
 
-    public String getTipUlei() { return tipUlei; }
-    public void setTipUlei(String tipUlei) { this.tipUlei = tipUlei; }
+    public String getMaterial() { return material; }
+    public void setMaterial(String material) { this.material = material; }
 
-    public double getConsumUlei() { return consumUlei; }
-    public void setConsumUlei(double consumUlei) { this.consumUlei = consumUlei; }
-
-    public double getRezervorCombustibil() { return rezervorCombustibil; }
-    public void setRezervorCombustibil(double rezervorCombustibil) { this.rezervorCombustibil = rezervorCombustibil; }
+    public int getVitezaLant() { return vitezaLant; }
+    public void setVitezaLant(int vitezaLant) { this.vitezaLant = vitezaLant; }
 
     @Override
     public String toString() {
@@ -75,12 +66,11 @@ public class Drujba extends Aparat {
                 ", putere=" + getPutere() +
                 ", greutate=" + getGreutate() +
                 ", pret=" + getPret() +
-                ", lungimeLama=" + lungimeLama +
-                ", vitezaChain=" + vitezaChain +
-                ", nivelZgomot=" + nivelZgomot +
-                ", tipUlei='" + tipUlei + '\'' +
-                ", consumUlei=" + consumUlei +
-                ", rezervorCombustibil=" + rezervorCombustibil +
+                ", capacitateBaterie=" + capacitateBaterie +
+                ", latimeLama=" + latimeLama +
+                ", notaRecenzii=" + notaRecenzii +
+                ", material='" + material + '\'' +
+                ", vitezaLant=" + vitezaLant +
                 '}';
     }
 }
