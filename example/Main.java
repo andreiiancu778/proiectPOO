@@ -21,6 +21,7 @@ public class Main {
 
         System.out.println("\nTRIMMERE");
         for (Object o : trimmere) System.out.println(o);
+
         Object[] lista = new Object[20];
 
         for (int i = 0; i < 10; i++) {
@@ -42,5 +43,6 @@ public class Main {
         System.out.println("=== APARATSPALARECUPRESIUNE SI SUFLANTA ===");
         for (Object obj : lista) {
             System.out.println(obj.toString());
+        }
     }
 }

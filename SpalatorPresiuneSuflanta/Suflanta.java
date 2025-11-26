@@ -63,4 +63,14 @@ class Suflanta extends Aparat {
                 ", Nivel zgomot: " + nivelZgomot + " dB" +
                 ", Tip alimentare: " + tipAlimentare;
     }
+    public static void afiseazaSilentioase(Object[] lista, int zgomotMaxim) {
+        System.out.println("=== SUFLANTE CU ZGOMOT < " + zgomotMaxim + " dB ===");
+        for (Object obj : lista) {
+            if (obj instanceof Suflanta s) {
+                if (s.getNivelZgomot() < zgomotMaxim) {
+                    System.out.println(s);
+                }
+            }
+        }
+    }
 }

@@ -63,5 +63,15 @@ class AparatSpalareCuPresiune extends Aparat {
                 ", Tip lance: " + tipLance +
                 ", Lungime furtun: " + lungimeFurtun + " m";
     }
+    public static void afiseazaCuPresiune(Object[] lista, double presiuneMinima) {
+        System.out.println("=== APARATE CU PRESIUNE > " + presiuneMinima + " bari ===");
+        for (Object obj : lista) {
+            if (obj instanceof AparatSpalareCuPresiune asp) {
+                if (asp.getPresiune() > presiuneMinima) {
+                    System.out.println(asp);
+                }
+            }
+        }
+    }
 
 }
