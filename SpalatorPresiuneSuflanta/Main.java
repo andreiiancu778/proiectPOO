@@ -110,7 +110,7 @@ class Main {
             System.out.println(obj.toString());
         }
         //CITIRE PRESIUNE MINIMA
-        String presInput = JOptionPane.showInputDialog(
+        /*String presInput = JOptionPane.showInputDialog(
                 null,
                 "Introdu presiunea minimă (bari) pentru aparatele de spălat:",
                 "Filtru presiune",
@@ -129,6 +129,7 @@ class Main {
 
         int zgomotMaxim = Integer.parseInt(zgomotInput);
         AparatSpalareCuPresiune.afiseazaCuPresiune(lista, presiuneMinima);
-        Suflanta.afiseazaSilentioase(lista, zgomotMaxim);
+        Suflanta.afiseazaSilentioase(lista, zgomotMaxim);*/
+        new Interfata(lista);
     }
 }
