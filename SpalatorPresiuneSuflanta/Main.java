@@ -16,6 +16,9 @@
     */
 
 import javax.swing.JOptionPane;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 class Main {
 
     public static void main(String[] args) {
@@ -130,6 +133,36 @@ class Main {
         int zgomotMaxim = Integer.parseInt(zgomotInput);
         AparatSpalareCuPresiune.afiseazaCuPresiune(lista, presiuneMinima);
         Suflanta.afiseazaSilentioase(lista, zgomotMaxim);*/
+        salveazaAparate(lista, "aparate.txt");
+        salveazaSuflante(lista, "suflante.txt");
         new Interfata(lista);
+    }
+    public static void salveazaAparate(Object[] lista, String numeFisier) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(numeFisier))) {
+            for (Object obj : lista) {
+                if (obj instanceof AparatSpalareCuPresiune) {
+                    writer.write(obj.toString());
+                    writer.newLine();
+                }
+            }
+            System.out.println("Aparate salvate în: " + numeFisier);
+        } catch (IOException e) {
+            System.out.println("Eroare la salvarea aparatelor: " + e.getMessage());
+        }
+    }
+
+    // === Metoda de salvare a suflantelor ===
+    public static void salveazaSuflante(Object[] lista, String numeFisier) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(numeFisier))) {
+            for (Object obj : lista) {
+                if (obj instanceof Suflanta) {
+                    writer.write(obj.toString());
+                    writer.newLine();
+                }
+            }
+            System.out.println("Suflante salvate în: " + numeFisier);
+        } catch (IOException e) {
+            System.out.println("Eroare la salvarea suflantelor: " + e.getMessage());
+        }
     }
 }

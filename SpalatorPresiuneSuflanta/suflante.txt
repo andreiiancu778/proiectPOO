@@ -1,0 +1,10 @@
+[Suflanta] Marca: Bosch, Model: ALB 18 LI, Putere: 180 W, Greutate: 1.8 kg, Pret: 499.99 lei, Viteza aer: 200 km/h, Debit aer: 2.5 m3/min, Functie aspirare: Nu, Nivel zgomot: 80 dB, Tip alimentare: Acumulator
+[Suflanta] Marca: Bosch, Model: UniversalGardenTidy, Putere: 1800 W, Greutate: 3.4 kg, Pret: 649.99 lei, Viteza aer: 285 km/h, Debit aer: 3.5 m3/min, Functie aspirare: Da, Nivel zgomot: 99 dB, Tip alimentare: Electrica
+[Suflanta] Marca: Makita, Model: UB1103, Putere: 600 W, Greutate: 1.9 kg, Pret: 359.99 lei, Viteza aer: 290 km/h, Debit aer: 4.1 m3/min, Functie aspirare: Nu, Nivel zgomot: 87 dB, Tip alimentare: Electrica
+[Suflanta] Marca: Makita, Model: DUB186Z, Putere: 180 W, Greutate: 2.0 kg, Pret: 419.99 lei, Viteza aer: 210 km/h, Debit aer: 3.2 m3/min, Functie aspirare: Nu, Nivel zgomot: 83 dB, Tip alimentare: Acumulator
+[Suflanta] Marca: Black&Decker, Model: GW3030, Putere: 3000 W, Greutate: 4.8 kg, Pret: 459.99 lei, Viteza aer: 418 km/h, Debit aer: 14.0 m3/min, Functie aspirare: Da, Nivel zgomot: 106 dB, Tip alimentare: Electrica
+[Suflanta] Marca: Stihl, Model: BGA 57, Putere: 450 W, Greutate: 2.3 kg, Pret: 899.99 lei, Viteza aer: 246 km/h, Debit aer: 3.6 m3/min, Functie aspirare: Nu, Nivel zgomot: 82 dB, Tip alimentare: Acumulator
+[Suflanta] Marca: Stihl, Model: BG 86, Putere: 830 W, Greutate: 4.4 kg, Pret: 1699.99 lei, Viteza aer: 306 km/h, Debit aer: 13.0 m3/min, Functie aspirare: Da, Nivel zgomot: 104 dB, Tip alimentare: Benzină
+[Suflanta] Marca: Husqvarna, Model: 125BVx, Putere: 800 W, Greutate: 4.2 kg, Pret: 1499.99 lei, Viteza aer: 320 km/h, Debit aer: 12.0 m3/min, Functie aspirare: Da, Nivel zgomot: 107 dB, Tip alimentare: Benzina
+[Suflanta] Marca: Einhell, Model: GE-CL 36, Putere: 250 W, Greutate: 2.4 kg, Pret: 579.99 lei, Viteza aer: 210 km/h, Debit aer: 7.2 m3/min, Functie aspirare: Nu, Nivel zgomot: 84 dB, Tip alimentare: Acumulator
+[Suflanta] Marca: Ryobi, Model: RBL36JB, Putere: 300 W, Greutate: 4.1 kg, Pret: 899.99 lei, Viteza aer: 250 km/h, Debit aer: 8.0 m3/min, Functie aspirare: Da, Nivel zgomot: 97 dB, Tip alimentare: Acumulator
