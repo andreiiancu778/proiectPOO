@@ -10,8 +10,8 @@ class GUIAparate {
     pardoseli = new Object[10];
     geamuri = new Object[10];
     for (int i = 0; i < 10; i++) {
-      pardoseli[i] = new AparatCuratatPardoseli("MarcaP" + i, "ModelP" + i, 100 + i, 500 + i);
-      geamuri[i] = new AparatCuratatGeamuri("MarcaG" + i, "ModelG" + i, 80 + i, 1.5 + i);
+      pardoseli[i] = new AparatCuratatPardoseli();
+      geamuri[i] = new AparatCuratatGeamuri();
       }
 
     salveazaInFisier("pardoseli.txt", pardoseli);
